@@ -20,7 +20,8 @@ let package = Package(
             name: "RoutingKit",
             dependencies: [
                 .product(name: "Logging", package: "swift-log"),
-            ]
+            ],
+            resources: [.process("PrivacyInfo.xcprivacy")]
         ),
         .testTarget(
             name: "RoutingKitTests",

@@ -21,6 +21,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Logging", package: "swift-log"),
             ],
+            resources: [.process("PrivacyInfo.xcprivacy")],
             swiftSettings: [
                 .enableUpcomingFeature("ExistentialAny"),
                 .enableExperimentalFeature("StrictConcurrency=complete"),
